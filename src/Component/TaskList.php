@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Copyright (C) GrizzIT, Inc. All rights reserved.
  * See LICENSE for license details.
@@ -17,14 +18,14 @@ class TaskList implements Iterator, TaskListInterface
      *
      * @var TaskInterface[]
      */
-    private $tasks = [];
+    private array $tasks = [];
 
     /**
      * Contains the current key for the internal iterator.
      *
      * @var int
      */
-    private $key = 0;
+    private int $key = 0;
 
     /**
      * Adds a task to the task list.
